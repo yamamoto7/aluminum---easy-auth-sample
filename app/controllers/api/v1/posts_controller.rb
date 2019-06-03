@@ -16,6 +16,9 @@ class Api::V1::PostsController < ApplicationController
 
   private
   def post_params
-    params.permit(:body)
+    params.permit(
+      :body,
+      :image
+    )
   end
 end
